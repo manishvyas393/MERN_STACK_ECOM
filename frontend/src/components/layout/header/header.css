@@ -1,0 +1,45 @@
+.SpeedDial {
+      position: fixed;
+      right: 1vmax;
+      top: 0.1vmax;
+}
+
+.SpeedDialIcon {
+      width: 56px;
+      height: 56px;
+      border-radius: 100%;
+      border: 2px solid rgb(170, 159, 159);
+}
+
+.Header {
+      display: flex;
+      background-color: tomato;
+      height: 65px;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: -0.10vmax;
+      z-index: 11;
+}
+
+.Header>.logo>img {
+      width: 250px;
+      height: 60px;
+}
+
+.menu {
+      padding: 0 50px;
+      margin-right: 50px;
+}
+
+.menu>a {
+      text-decoration: none;
+      padding: 5px 10px;
+      font: 300 1vmax "Roboto";
+      color: rgb(53, 52, 52);
+}
+
+.menu>a:hover {
+      color: white;
+}

@@ -1,0 +1,62 @@
+.adminAllOrders {
+      width: 100vw;
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+}
+
+.ordersListContainer {
+      margin-top: 50px;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: rgb(255, 255, 255);
+      border-left: 1px solid rgba(0, 0, 0, 0.158);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+}
+
+#ordersListHeading {
+      font: 400 1.5vmax "Roboto";
+      text-align: center;
+      box-sizing: border-box;
+      margin: 2rem;
+      color: rgba(0, 0, 0, 0.637);
+      transition: all 0.5s;
+      padding: 0.5vmax;
+}
+
+.ordersListTable {
+      border: none;
+}
+
+.ordersListTable>div {
+      font: 300 1vmax "Roboto";
+      border: none !important;
+}
+.ordersListTable a{
+      margin-top: 8px;
+}
+.ordersListTable a,
+.ordersListTable button {
+      color: rgba(0, 0, 0, 0.527);
+      transition: all 0.5s;
+}
+
+.ordersListTable a:hover {
+      color: tomato;
+}
+
+.ordersListTable button:hover {
+      color: rgb(236, 30, 30);
+}
+
+.MuiDataGrid-columnHeader div {
+      color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+      .ordersListTable>div {
+            font: 300 4vw "Roboto";
+      }
+}

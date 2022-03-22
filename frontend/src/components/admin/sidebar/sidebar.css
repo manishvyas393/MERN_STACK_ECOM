@@ -1,0 +1,56 @@
+.Sidebar {
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      padding: 4rem 0;
+}
+
+.Sidebar>a:first-child {
+      padding: 0;
+}
+
+.Sidebar>a>img {
+      width: 100%;
+      transition: all 0.5s;
+}
+
+.Sidebar>a>img:hover {
+      filter: drop-shadow(0 0 10px tomato);
+}
+
+.Sidebar>a, .Sidebar>div {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.493);
+      transition: all 0.5s;
+      font: 200 1rem "Roboto";
+      padding: 2rem;
+}
+
+.MuiTreeItem-content {
+      width: 80%;
+}
+
+.MuiCollapse-wrapperInner>a {
+      text-decoration: none;
+      padding: 5px 10px;
+      color: rgba(0, 0, 0, 0.493);
+      transition: all 0.5s;
+}
+
+.Sidebar>a:hover, .Sidebar>div:hover, .MuiTreeItem-content:hover, .MuiCollapse-wrapperInner>a:hover {
+      color: tomato;
+      transform: scale(1.1);
+}
+
+.Sidebar a>p {
+      display: flex;
+      align-items: center;
+}
+
+.Sideba a>p>svg {
+      margin-right: 0.5rem;
+}
+
+.MuiTypography-root {
+      background-color: #fff !important;
+}

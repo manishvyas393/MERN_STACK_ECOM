@@ -1,0 +1,32 @@
+.ReviewCard{
+      flex: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+      border: 1px solid rgba(56, 56, 56, 0.116);
+      width: 30vmax;
+      display: flex;
+      flex-direction: column;
+  align-items: center;
+   margin: 1vmax;
+  padding: 3vmax;
+}
+.ReviewCard>img{
+      width: 5vmax;
+}
+.ReviewCard > p {
+  color: rgba(0, 0, 0, 0.836);
+  font: 600 0.9vmax "Roboto";
+  text-transform: capitalize;
+}
+.reviewCardComment {
+  color: rgba(0, 0, 0, 0.445);
+  font: 300 0.8vmax cursive;
+  text-transform: capitalize;
+}
+@media screen and (max-width:600px) {
+       .ReviewCard > p {
+    font: 600 3vw "Roboto";
+  }
+  .reviewCardComment {
+    font: 300 3vw cursive;
+  }
+}

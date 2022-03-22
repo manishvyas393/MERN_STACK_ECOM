@@ -1,0 +1,120 @@
+.UpdateProfileContainer{
+      width: 100vw;
+      height: 100vh;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(231,231,231);
+      position: fixed;
+      top: 0%;
+      left: 0;
+}
+.UpdateProfileBox{
+      background-color: white;
+      width: 25vw;
+      height: 70vh;
+      box-sizing: border-box;
+      overflow: hidden;
+}
+.UpdateProfileBox>h2{
+      margin-top: 1vmax;
+      font: 300 2vmax "Roboto";
+      text-align: center;
+}
+
+.UpdateProfileBox>div>button{
+      background-color: tomato;
+      height: 3px;
+      width: 50%;
+      border: none;
+      transition: all 0.5s;
+
+}
+.UpdateProfileForm{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      padding: 2vmax;
+      justify-content: space-evenly;
+      height: 70%;
+      transition: all 0.5s;
+}
+
+.UpdateProfileForm>div{
+      display: flex;
+      width: 100%;
+      align-items: center;
+}
+.UpdateProfileForm>div>input{
+padding: 1vmax 4vmax;
+padding-right: 1vmax;
+width: 100%;
+box-sizing: border-box;
+border: 1px solid rgba(0,0,0,0.267);
+font: 300 0.9vmax "Roboto";
+outline: none;
+}
+
+.UpdateProfileForm>div>svg{
+      position:absolute;
+      transform: translateX(1vmax);
+      font-size: 1.0vmax;
+}
+#UpdateProfileImage>img{
+width: 2vmax;
+border-radius: 100%;
+}
+#UpdateProfileImage>input{
+      display: flex;
+      padding: 0;
+}
+#UpdateProfileImage>input::file-selector-button{
+      cursor: pointer;
+}
+.UpdateProfileBtn{
+      border: none;
+      background-color: tomato;
+      color: white;
+      font: 300 0.9vmax "Roboto";
+      width: 100%;
+      padding: 0.8vmax;
+      cursor: pointer;
+      transition: all 0.5s;
+      border-radius: 4px;
+      outline: none;
+}
+.UpdateProfileBtn:hover{
+      background-color: rgb(245, 47, 12);
+}
+
+@media  screen and (max-width:600px) {
+      .UpdateProfileContainer{
+            background-color: white;
+      }
+      .UpdateProfileBox{
+            width: 100vw;
+            height: 95vh;
+      }
+      .UpdateProfileForm{
+            padding: 5vmax;
+      }
+      .UpdateProfileForm>div>input{
+            padding: 2.5vmax 5vmax;
+            font: 300 1.7vmax "Roboto"
+      }
+      .UpdateProfileForm>div>svg{
+            font-size: 2.8vmax;
+      }
+      .UpdateProfileForm>a{
+            font:500 1.8vmax "Roboto"
+      }
+      .UpdateProfileBtn{
+            font: 300 2.5vmax "Roboto";
+            padding: 1.5vmax;
+      }
+      #UpdateProfileImage>img{
+            width: 4vmax;
+}
+}

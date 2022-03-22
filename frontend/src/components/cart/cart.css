@@ -1,0 +1,191 @@
+.NoItems{
+      margin: auto;
+      text-align: center;
+      padding: 10vmax;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+.NoItems>svg{
+      font-size: 5vmax;
+      color: tomato;
+}
+.NoItems>p{
+      font-size: 2vmax;
+}
+.NoItems>a{
+      background-color: rgba(51,51,51);
+      color: white;
+      border: none;
+      padding: 1vmax 3vmax;
+      cursor: pointer;
+      font: 400 1vmax "Roboto";
+      text-decoration: none;
+}
+.CartPage {
+      padding: 5vmax;
+}
+
+.CartHeader {
+      background-color: tomato;
+      width: 90%;
+      box-sizing: border-box;
+      color: white;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 4fr 1fr 1fr;
+}
+
+.CartHeader>p {
+      margin: 10px;
+      font: 300 1vmax "Roboto";
+}
+
+.CartHeader>p:last-child {
+      text-align: end;
+}
+
+.CartItemContainer {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 4fr 1fr 1fr;
+}
+
+.CartInput {
+      display: flex;
+      align-items: center;
+      height: 8vmax;
+}
+
+.CartInput>button {
+      border: none;
+      background-color: rgba(47, 46, 46, 0.916);
+      padding: 0.5vmax;
+      cursor: pointer;
+      color: white;
+      transition: all 0.5s;
+}
+
+.CartInput>button:hover {
+      background-color: rgba(0, 0, 0, 0.616);
+}
+
+.CartInput>input {
+      border: none;
+      padding: 0.5vmax;
+      width: 1vmax;
+      text-align: center;
+      outline: none;
+      font: 400 0.8vmax "Roboto";
+      color: rgba(0, 0, 0, 0.74);
+}
+
+.SubTotal {
+      display: flex;
+      padding: 0.5vmax;
+      height: 8vmax;
+      align-items: center;
+      box-sizing: border-box;
+      font: 300 1vmax "Roboto";
+      justify-content: flex-end;
+      color: rgba(0, 0, 0, 0.753);
+}
+
+.TotalAmount {
+      display: grid;
+      grid-template-columns: 2fr 1.2fr;
+}
+
+.TotalAmountBox {
+      border-top: 3px solid tomato;
+      margin: 1vmax 4vmax;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      font: 300 1.5vmax "Roboto";
+      color: rgba(0, 0, 0, 0.753);
+      padding: 2vmax 0;
+}
+
+.CheckOutBtn {
+      display: flex;
+      justify-content: flex-end;
+}
+
+.CheckOutBtn>button {
+      background-color: tomato;
+      color: white;
+      border: none;
+      padding: 0.8vmax 4vmax;
+      width: 50%;
+      font: 300 0.8vmax "Roboto";
+      margin: 1vmax 4vmax;
+      cursor: pointer;
+      border-radius: 30px;
+}
+
+.CheckOutBtn>button:hover {
+      background-color: rgb(250, 52, 17);
+}
+
+@media screen and (max-width:600px) {
+      .CartPage {
+            padding: 0vmax;
+            min-height: 60vh;
+      }
+
+      .CartHeader {
+            width: 100%;
+            grid-template-columns: 3fr 1fr 1fr;
+      }
+
+      .CartHeader>p {
+            font: 300 2vmax "Roboto";
+      }
+
+      .CartItemContainer {
+            width: 100%;
+            grid-template-columns: 3fr 1fr 1fr;
+      }
+
+      .CartInput {
+            height: 20vmax;
+      }
+
+      .CartInput>button {
+            padding: 1.5vmax;
+      }
+
+      .CartInput>input {
+            width: 2vmax;
+            padding: 1.5vmax;
+            font: 400 1.8vmax "Roboto";
+      }
+
+      .SubTotal {
+            padding: 1.5vmax;
+            height: 20vmax;
+            font: 400 2.5vmax "Roboto";
+      }
+
+      .TotalAmount {
+            display: grid;
+            grid-template-columns: 0fr 2fr;
+      }
+
+      .TotalAmountBox {
+            padding: 2vmax;
+            font: 400 2.5vmax "Roboto";
+      }
+
+      .CheckOutBtn>button {
+            padding: 2vmax 4vmax;
+            width: 100%;
+            font: 300 2vmax "Roboto";
+      }
+
+
+}
