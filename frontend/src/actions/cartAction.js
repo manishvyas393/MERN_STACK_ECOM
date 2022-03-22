@@ -1,7 +1,7 @@
 import { ADD_TO_CART, DELETE_ITEM_FROM_CART, SAVE_SHIPPING_INFO } from "../constants/cartConstants"
 import axios from "axios";
 const Axios = axios.create({
-      baseURL: "https://mern-stack-e-com.herokuapp.com",
+      baseURL: "https://mern-stack-ecom.herokuapp.com",
       withCredentials: true,
       credentials: "include"
 

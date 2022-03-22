@@ -17,7 +17,7 @@ import {
 } from "../constants/productConstants"
 //getProducts
 const Axios = axios.create({
-      baseURL: "https://mern-stack-e-com.herokuapp.com",
+      baseURL: "https://mern-stack-ecom.herokuapp.com",
       withCredentials: true,
       credentials: "include"
 
